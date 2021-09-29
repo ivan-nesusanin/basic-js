@@ -1,3 +1,8 @@
+/* Your task is to implement function that accepts email address (email) and returns it's domain.
+
+For example:
+getEmailDomain('prettyandsimple@example.com') => 'example.com'*/
+
 import { NotImplementedError } from '../extensions/index.js';
 
 /**
@@ -10,7 +15,7 @@ import { NotImplementedError } from '../extensions/index.js';
  * For the input 'prettyandsimple@example.com', the output should be 'example.com'
  *
  */
-export default function getEmailDomain(/* email */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+export default function getEmailDomain(email) {
+  // throw new NotImplementedError('Not implemented');
+  return email.slice(email.lastIndexOf('@') + 1);
 }
